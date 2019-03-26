@@ -5,7 +5,7 @@ import android.content.Context;
 import com.example.marobine.premierprojet.model.AccesDistant;
 import com.example.marobine.premierprojet.model.Profil;
 import com.example.marobine.premierprojet.outils.RecupFichier;
-import com.example.marobine.premierprojet.view.MainActivity;
+import com.example.marobine.premierprojet.view.CalculIMCActivity;
 
 import org.json.JSONArray;
 
@@ -91,7 +91,7 @@ public final class Control {
 
     public void setProfil(Profil profil) {
         Control.profil = profil;
-        ((MainActivity) contexte).recupererProfil();
+        ((CalculIMCActivity) contexte).recupererProfil();
     }
 
 }

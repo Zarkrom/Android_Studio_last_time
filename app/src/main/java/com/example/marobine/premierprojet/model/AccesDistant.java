@@ -13,12 +13,13 @@ public class AccesDistant implements AsyncReponse {
     // constante de classe
     // cmd > ipconfig > IPv4
     // acces au fichier php dans le dossier de Wamp
-    private static final String SERVEURADDR = "http://192.168.163.1/IMCPoidsIdeal/serveurIMCPI.php";
+    private static final String SERVEURADDR = "http://172.16.4.37/IMC_Poids_Ideal/serveurIMCPI.php";
     private Control control;
 
     public AccesDistant() {
         control = Control.getInstance(null);
     }
+
     /**
      * S'exécute au retour du serveur distant
      * @param output
